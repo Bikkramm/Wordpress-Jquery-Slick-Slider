@@ -15,4 +15,9 @@ add_action('wp_enqueue_scripts', function() {
         wp_enqueue_script('ourwork-js', get_template_directory_uri() . '/assets/js/ourwork.js', [], null, true);
     }
 
+   if ( is_page(['about', 'ourwork']) ) {
+    // #Shorthand Ye code "About" aur "Our Work" pages pe chalega
+}
+
+
 });
